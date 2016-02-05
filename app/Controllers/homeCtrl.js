@@ -5,5 +5,11 @@
         success(function(data) {
             $scope.users = data;
         });
+  $scope.predicate = 'UserName';
+  $scope.reverse = true;
+  $scope.sort = function (predicate) {
+    $scope.reverse = ($scope.predicate === predicate) ? !$scope.reverse : false;
+    $scope.predicate = predicate;
+  };
 }]);
 
