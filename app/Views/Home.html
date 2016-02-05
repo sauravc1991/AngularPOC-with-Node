@@ -1,0 +1,22 @@
+﻿<div class="jumbotron text-center">
+    <h1>Home Page</h1>
+    <p>{{ message }}</p>
+</div>
+<div class="container col-md-6 col-md-offset-3">
+<h3 class="text-center">Employee Records</h3>
+<table class="table table-bordered table-striped">
+       <thead>
+	   <td><b>User Name</b></td>
+	   <td><b>Employee Name</b></td>
+   	   <td><b>Employee Group ID</b></td>
+	   <td><b>Employee Role ID</b></td>
+				   
+	   </thead>
+	   <tr ng-repeat="user in users">
+	   <td> {{user.UserName}} </td>
+	   <td> {{user.EmpName}} </td>
+	   <td> {{user.GroupID}} </td>
+	   <td> {{user.RoleID}} </td>
+	   </tr>
+	</table>
+</div>
